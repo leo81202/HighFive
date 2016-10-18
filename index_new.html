@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta property="og:image" content="http://lipis.github.io/bootstrap-social/assets/img/bootstrap-social.png">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://lipis.github.io/bootstrap-social/bootstrap-social.css">
+  <link rel="stylesheet" href="https://lipis.github.io/bootstrap-social/assets/css/font-awesome.css">
+  <!--link rel="stylesheet" href="https://lipis.github.io/bootstrap-social/assets/css/docs.css" -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <script src="https://www.google.com/jsapi/?key=internal-sample" type="text/javascript"></script>
+  <script src="gfdynamicfeedcontrol.js" type="text/javascript"></script>
+  
+  <style>
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+	
+	@import url("gfdynamicfeedcontrol.css");
+
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial;
+      font-size: small;
+      margin: 0;
+    }
+    #feedGadget { 
+      
+      margin-left: 20px;
+      width : 350px;
+      font-size: 12px;
+      color: #9CADD0;
+    }
+    #feedGadget .gfg-root {
+      font-size : 11px;
+    }
+    #feedGadget .gfg-root .gfg-entry .gf-result {
+      padding-left : 10px;
+    }
+    #feedGadget .gfg-title {
+      text-align: center;
+	  font-size : 15px;
+      background-color : black; //#DDEDD1;
+      color : white;//#4E8029;
+    }
+    #feedGadget .gfg-title a {
+      color : #4E8029;
+    }
+    #feedGadget .gfg-subtitle {
+      font-size : 13px;
+      background-color : #ffffff;
+      color : #203311;
+      text-align : left;
+      margin-left : 5px;
+    }
+    #feedGadget .gfg-subtitle a {
+      color : #203311;
+    }
+    #feedGadget .gf-title {
+      font-size : 12px;
+    }
+    #feedGadget .gf-title a{
+      color : #4E8029;
+    }
+    #feedGadget .gfg-root .gfg-listentry {
+      padding-left : 5px;
+      margin-right : 5px;
+    }
+    #feedGadget .gfg-root .gfg-listentry a {
+      color : #4E8029;
+    }
+    #feedGadget .gfg-root .gfg-listentry a:hover {
+      color : #203311;
+    }
+    #feedGadget .gfg-root .gfg-listentry-odd {
+      background-color : #ffffff;
+    }
+    #feedGadget .gfg-root .gfg-listentry-highlight {
+      border-left: 2px solid #203311;
+      padding-left : 3px;
+      background-image : none;
+    }
+	
+  </style>
+  
+
+  <script type="text/javascript">
+    function showGadget() {
+      var feeds = [
+       {title:'CNN Top Stories',
+        url:'http://rss.cnn.com/rss/cnn_topstories.rss'},
+       {title:'E-Online',
+        url:'http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml'},
+       {title:'TMZ',
+        url:'http://www.tmz.com/rss.xml'}];
+
+      new GFdynamicFeedControl(feeds, 'feedGadget',
+                               {numResults : 2, stacked : true,
+                               title: "High Five News"});
+    }
+    google.load("feeds", "1");
+    google.setOnLoadCallback(showGadget);
+  </script>
+  
+  
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+	  </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Main</a></li>
+		
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Restaurants</a></li>
+			  <li><a href="#">Parks</a></li>
+			  <li><a href="#">Museums</a></li>
+			  <li><a href="#">Concerts/Shows</a></li>
+			  <li><a href="#">Sports</a></li>
+			  <li><a href="#">Miscelanious</a></li>
+			</ul>
+		</li>
+		
+		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Community Resources<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Clothing</a></li>
+			  <li><a href="#">Coupons/Deals</a></li>
+			  <li><a href="#">Financial Counseling</a></li>
+			  <li><a href="#">Food Banks</a></li>
+			  <li><a href="#">Furniture</a></li>
+			  <li><a href="#">Housing</a></li>
+			  <li><a href="#">School Supplies</a></li>
+			  <li><a href="#">Transportion</a></li>
+			  <li><a href="#">Utilities</a></li>
+			  <li><a href="#">Volunteer Opportunities</a></li>
+			  <li><a href="#">Workforce Training</a></li>
+			  
+			  
+			</ul>
+		</li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">ContactUs</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="row">
+  <div class="col-sm-8">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		  <li data-target="#myCarousel" data-slide-to="1"></li>
+		  <li data-target="#myCarousel" data-slide-to="2"></li>
+		  <li data-target="#myCarousel" data-slide-to="3"></li>
+		  <li data-target="#myCarousel" data-slide-to="4"></li>
+		  <li data-target="#myCarousel" data-slide-to="5"></li>
+		  <li data-target="#myCarousel" data-slide-to="6"></li>
+		  <li data-target="#myCarousel" data-slide-to="7"></li>
+		  <li data-target="#myCarousel" data-slide-to="8"></li>
+		  <li data-target="#myCarousel" data-slide-to="9"></li>
+		  <li data-target="#myCarousel" data-slide-to="10"></li>
+		  <li data-target="#myCarousel" data-slide-to="11"></li>
+		  <li data-target="#myCarousel" data-slide-to="12"></li>
+		  <li data-target="#myCarousel" data-slide-to="13"></li>
+		  <li data-target="#myCarousel" data-slide-to="14"></li>
+		  <li data-target="#myCarousel" data-slide-to="15"></li>
+		  <li data-target="#myCarousel" data-slide-to="16"></li>
+		  <li data-target="#myCarousel" data-slide-to="17"></li>
+		  <li data-target="#myCarousel" data-slide-to="18"></li>
+		  <li data-target="#myCarousel" data-slide-to="19"></li>
+		  <li data-target="#myCarousel" data-slide-to="20"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+		  <div class="item active">
+			<img src="img/sunrise.jpg" alt="Cleveland Sunrise" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3>Cleveland code</h3>
+			  <p>Test about cleveland code</p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/Cleveland1.jpg" alt="Cleveland" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/PlayhouseSquare.jpg" alt="Play House Square" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/clevelandrocknrollhalloffame.jpg" alt="Rock and Roll Hall of Fame" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p>T</p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/ArtMuseum.jpg" alt="Cleveland Art Museum" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/ArtMuseum2.jpg" alt="Cleveland Art Museum" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/chagrinfalls.jpg" alt="Chagrin Falls" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/clevelandArtMum.jpg" alt="Cleveland Art Museum" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/ClevelandLake.jpg" alt="Lake Erie" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/clevelandMuseumArt.jpg" alt="Cleveland Art Museum" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/ClevelandSuperman.jpg" alt="Superman" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/ClevelandWestsideMarket.jpg" alt="Cleveland West Side Market" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/freestamp.jpg" alt="Free Stamp" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/LebronJames1.png" alt="Lebron James" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/LebronJames2.jpg" alt="Lebron James" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+
+		  <div class="item">
+			<img src="img/MarketClock.jpg" alt="Market Clock" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/SeverenceHall.jpg" alt="Severence Hall" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/ShakerHeights.jpg" alt="Shaker Heights" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/statue.jpg" alt="Statue" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/StTheodosiusTremont.jpg" alt="St Theodosius Tremont" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="img/west-side-market.jpg" alt="West Side Market" width="1200" height="700">
+			<div class="carousel-caption">
+			  <h3></h3>
+			  <p></p>
+			</div>
+		  </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <!-- <div class="well">
+      <p>Some text..</p>
+    </div>
+    <div class="well">
+       <p>Upcoming Events..</p>
+    </div>
+    <div class="well">
+       <p>Visit Our Blog</p>
+    </div> -->
+	
+	<div id="body">
+		<div id="feedGadget">Loading...</div>
+	
+	</div>
+	
+  </div>
+</div>
+<hr>
+</div>
+
+<div class="container text-center">    
+  <h3>What We Do</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Current Project</p>
+    </div>
+    <div class="col-sm-3"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Project 2</p>    
+    </div>
+    <div class="col-sm-3">
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+      <div class="well">
+       <p>Some text..</p>
+      </div>
+    </div>  
+  </div>
+  <hr>
+</div>
+
+<div class="container text-center">    
+  <h3>Our Partners</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Partner 1</p>
+    </div>
+    <div class="col-sm-2"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Partner 2</p>    
+    </div>
+    <div class="col-sm-2"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Partner 3</p>
+    </div>
+    <div class="col-sm-2"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Partner 4</p>
+    </div> 
+    <div class="col-sm-2"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Partner 5</p>
+    </div>     
+    <div class="col-sm-2"> 
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+      <p>Partner 6</p>
+    </div> 
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <h3>Follow Us</h3>
+  <div class="text-center">
+   
+	<a class="btn btn-social-icon btn-facebook" href="http://www.w3schools.com" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-facebook']);"><span class="fa fa-facebook"></span></a>
+	<a class="btn btn-social-icon btn-linkedin" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-linkedin']);"><span class="fa fa-linkedin"></span></a>
+	<a class="btn btn-social-icon btn-twitter" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-twitter']);"><span class="fa fa-twitter"></span></a>
+	<a class="btn btn-social-icon btn-pinterest" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-pinterest']);"><span class="fa fa-pinterest"></span></a>
+	<a class="btn btn-social-icon btn-vimeo" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-vimeo']);"><span class="fa fa-vimeo-square"></span></a>
+	<a class="btn btn-social-icon btn-yahoo" onclick="_gaq.push(['_trackEvent', 'btn-social-icon', 'click', 'btn-yahoo']);"><span class="fa fa-yahoo"></span></a>
+	
+</div>
+</footer>
+
+</body>
+</html>

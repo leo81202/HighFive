@@ -1,0 +1,109 @@
+/* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      min-height: 200px;
+    }
+
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+	
+	#logo{
+		//height: 100%; 
+		//width: 100%; 
+		//transparent: true;
+		
+		//margin-top: -3px;
+		//margin-left: 5px;
+	}
+	
+	.container{
+		margin-top: 70px;
+		//margin-left: 5px;
+	}
+	
+	.navbar-brand{
+		padding-top: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-bottom: 0px;
+	}
+	/* END STYLE OF THE MAIN PAGE */
+	
+	/* --------------------------------
+		STYLE OF THE NEWS FEEDS 
+		-------------------------------------
+	*/
+	@import url("gfdynamicfeedcontrol.css");
+
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial;
+      font-size: small;
+      margin: 0;
+    }
+    #feedGadget { 
+      
+      margin-left: 20px;
+      width : 350px;
+      font-size: 12px;
+      color: #9CADD0;
+    }
+    #feedGadget .gfg-root {
+      font-size : 11px;
+    }
+    #feedGadget .gfg-root .gfg-entry .gf-result {
+      padding-left : 10px;
+    }
+    #feedGadget .gfg-title {
+      text-align: center;
+	  font-size : 15px;
+      background-color : black; //#DDEDD1;
+      color : white;//#4E8029;
+    }
+    #feedGadget .gfg-title a {
+      color : #4E8029;
+    }
+    #feedGadget .gfg-subtitle {
+      font-size : 13px;
+      background-color : #ffffff;
+      color : #203311;
+      text-align : left;
+      margin-left : 5px;
+    }
+    #feedGadget .gfg-subtitle a {
+      color : #203311;
+    }
+    #feedGadget .gf-title {
+      font-size : 12px;
+    }
+    #feedGadget .gf-title a{
+      color : #4E8029;
+    }
+    #feedGadget .gfg-root .gfg-listentry {
+      padding-left : 5px;
+      margin-right : 5px;
+    }
+    #feedGadget .gfg-root .gfg-listentry a {
+      color : #4E8029;
+    }
+    #feedGadget .gfg-root .gfg-listentry a:hover {
+      color : #203311;
+    }
+    #feedGadget .gfg-root .gfg-listentry-odd {
+      background-color : #ffffff;
+    }
+    #feedGadget .gfg-root .gfg-listentry-highlight {
+      border-left: 2px solid #203311;
+      padding-left : 3px;
+      background-image : none;
+    }

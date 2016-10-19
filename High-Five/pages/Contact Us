@@ -8,6 +8,10 @@
 </head>
 <body id="body">
   <h1>Contact Us</h1>
+  <p>3409 Woodland Ave</p>
+  <p>Cleveland, OH</p>
+  <p>44115</p>
+  <p>216-444-2323</p>
   <p>If you have any questions or comments, feel free to contact us. You can either fill out the form or simply send an email to us at info@hifive.com.</p>
 <!--adds form with multiple input boxes. The content will be emailed to info@hifive.com-->
   <form action="mailto:info@hifive.com" method="post" enctype="text/plain">

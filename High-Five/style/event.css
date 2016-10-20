@@ -1,0 +1,27 @@
+.background {
+  background:
+url("img/Playhouse_inside.jpg");
+background-size: cover;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+.transbox {
+    margin: 30px;
+    background-color: #000;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+
+}
+
+.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: white;
+}
+h3{
+  margin: 5%;
+  font-weight: bold;
+  color: white;
+}

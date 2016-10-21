@@ -2,11 +2,30 @@
 
 #aboutUs{
 		//background-color: #f6f6e6;
-    background-color: "red";
-		position: relative;
-		margin: 70px 0 0 0;
-		border-radius: 12px;
-    width: 300px;
-  position: static;
+		//background-color: #D1D1D1;
+		margin-top: 100px;
+		padding: inherit;
+		//padding-top: 0px;
+		position: top;
+}
 
+
+#statement{
+   //background-color: #f6f6e6;
+	 max-width: 500px;
+	 max-height: 500px
+	 float: left;
+	 padding: 50px;
+	 text-align: right;
+	 }
+
+#aboutLogo{
+	width: 30%;
+	height: 30%;
+	border: 2px solid black;
+	border-radius: 20px
+}
+
+#team-member h4{
+	text-align: center;
 }

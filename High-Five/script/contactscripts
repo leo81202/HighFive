@@ -1,0 +1,5 @@
+//Ensures email is formatted as a proper email
+function myFunction() {
+    var x = document.getElementById("myEmail").pattern;
+    document.getElementById("demo").innerHTML = x;
+  }

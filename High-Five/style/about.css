@@ -35,8 +35,8 @@ background-color: #eee;
 }
 
 #picMember{
-  width: 60%;
-	height: 60%;
+  width: 200px;
+	height: 200px; //60%
 	border-style: solid;
 	border-color: "black";
 	border: 10px;
@@ -45,6 +45,7 @@ background-color: #eee;
 h4{
 	color: #1087D0;
 }
+
 footer,header,nav,section{display:block}
 i:active,i:hover{
 	background-color:#1087D0;

@@ -1,11 +1,11 @@
 function showGadget() {
       var feeds = [
-       {title:'CNN Top Stories',
-        url:'http://rss.cnn.com/rss/cnn_topstories.rss'},
-       {title:'E-Online',
-        url:'http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml'},
-       {title:'TMZ',
-        url:'http://www.tmz.com/rss.xml'}];
+       {title:'Cleveland Entertainment',
+        url:'http://blog.cleveland.com/ent_impact/atom.xml'},
+       {title:'Cleveland Sports Blogs',
+        url:'http://blog.cleveland.com/cavs_impact/atom.xml'},
+       {title:'Local Communities',
+        url:'http://impact.cleveland.com/cleveland-heights/atom.xml'}];
 
       new GFdynamicFeedControl(feeds, 'feedGadget',
                                {numResults : 3, stacked : true,

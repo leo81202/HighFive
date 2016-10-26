@@ -2,6 +2,8 @@ body{
     background-color: #eee;
 }
 
-#picId{
-  text-align:justify;
+#info{
+  padding-top: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
 }

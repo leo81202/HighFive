@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a, .dropbtn {    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9 ;
+    min-width: 160px;
+    box-shadow: 8px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1 }
+.show {display:block;}
+.left{
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li>
+    <!--put home page here-->
+    <a class="active" href="#Home">Main</a>
+  </li>
+  <!--Events page goes here-->
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick=flip(events) onmouseout="off">Events</a>
+    <div class="dropdown-content" id="events">
+      <a href="#">Restaurants</a>
+      <a href="#">Parks</a>
+      <a href="#">Museums</a>
+      <a href="#">Concerts/Shows</a>
+      <a href="#">Sports</a>
+      <a href="#">Miscelanious</a>
+    </div>
+  </li>
+  <!--Community Resources-->
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick=flip(CR) onmouseout="off">Community Resources</a>
+    <div class="dropdown-content" id="CR">
+      <a href="#">Clothing</a>
+      <a href="#">Coupons/Deals</a>
+      <a href="#">Financial Counseling</a>
+      <a href="#">Food Banks</a>
+      <a href="#">Furniture</a>
+      <a href="#">Housing/Shelter</a>
+	  <a href="#">Multiple Resources</a>
+      <a href="#">School Supplies</a>
+	  <a href="#">Seniors</a>
+      <a href="#">Transportion</a>
+      <a href="#">Utilities</a>
+      <a href="#">Veterans Services</a>
+	  <a href="#">Volunteer Opportunities</a>
+      <a href="#">Workforce Training</a>
+    </div>
+  </li>
+  <!--About Us-->
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick=flip(aboutus) onmouseout="off">About Us</a>
+    <div class="dropdown-content" id="aboutus">
+      <a href="#">Mission Statement</a>
+      <a href="#">Team</a>
+      <a href="#">Link 3 if needed</a>
+    </div>
+  </li>
+  <!--Contact Us-->
+  <li>
+    <a class="active" href="#Home">Contact Us</a>
+  </li>
+  <li>
+    <!--SearchBar-->
+    <span class="search">
+      <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()"> >Search
+    </span>
+  </li>
+</ul>
+<span class="left">
+  <h3> Search box </h3>
+    <input type='text' id='link_id'>
+        <input type='button' id='link_str' value='Search' onClick='link()'>
+</span>
+
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Click on the "Dropdown" link to see the dropdown menu.</p>
+
+<script>
+<script type="text/javascript">
+
+ function link() {
+     var link_s = document.getElementById('link_id').value;
+     document.getElementById('link_str').innerHTML = link_s.link()
+ }
+
+ </script>
+
+</script>
+
+</body>
+</html>

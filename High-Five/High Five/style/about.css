@@ -1,0 +1,53 @@
+body{margin:0;
+padding-top: 0;
+background-color: #eee;
+}
+#aboutUs{
+	// background-color: #FAFAFA;
+	background-color: #eee;
+		//margin-top: 100px;
+		margin-top: 0;
+		//padding: inherit;
+		padding-top: 0px;
+		position: top;
+}
+
+#statement{
+	 padding: 50px;
+	 text-align: right;
+	 }
+#divLogo{
+	padding: 50px;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+#aboutLogo{
+	width: 80%;
+	height: 80%;
+}
+
+#team{
+	padding-top: 80px;
+}
+#members{
+	padding-top: 50px;
+}
+
+#picMember{
+  width: 200px;
+	height: 200px; //60%
+	border-style: solid;
+	border-color: "black";
+	border: 10px;
+}
+
+h4{
+	color: #1087D0;
+}
+
+footer,header,nav,section{display:block}
+i:active,i:hover{
+	background-color:#1087D0;
+
+  }

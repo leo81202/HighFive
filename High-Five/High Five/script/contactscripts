@@ -1,0 +1,7 @@
+//Ensures email is formatted as a proper email
+function myFunction() {
+    var x = document.getElementById("myEmail").pattern;
+    document.getElementById("demo").innerHTML = x;
+  }
+//setting the background image to the logo
+document.body.style.backgroundImage = "url=../image/logo_big.png";

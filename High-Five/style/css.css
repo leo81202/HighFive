@@ -1,21 +1,24 @@
 html{
 	height: 100%;
 	padding: 0;
-	margin: 0;
+	margin: 0;	
 }
 body {
+	background-image: url("../image/backmap.jpg");
 	background-color: #f6f6e6;
 	position: relative;
+	background-size: cover;
+	color: black;
 }
 #wrapper {
 	width: 900px;
 	height: 400px;
 	position: static;
 	left: 50%;
-    top: 50%;
-    width: 75%;
-    display: block;
-    margin: 0 auto;
+        top: 50%;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
 
 }
 #carousel img {
@@ -29,13 +32,13 @@ body {
 	height: 400px;
 	position: static;
 	left: 0%;
-    top: 50%;
-    width: 100%;
-    display: block;
-     margin: 10px;
+        top: 50%;
+        width: 100%;
+        display: block;
+        margin: 10px;
 	text-align: center;
 }
 #footer{
-    position: static;
-    margin: 110px;
+        position: static;
+        margin: 110px;
 }
